@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEIN Order Cancellation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .order-info {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            font-size: 16px;
+            padding: 10px 20px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: darkred;
+        }
+        iframe {
+            display: none; /* Initially hide the iframe */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SHEIN Order Cancellation</h1>
+        <div class="order-info">
+            <p>Order #A12345</p>
+            <p>Your cherry-flavored lube for Arthur J is ready to ship.</p>
+            <p>Please confirm the delivery address to proceed with your order.</p>
+        </div>
+        <button class="button" id="cancelButton">Cancel Order</button>
+        <!-- Embedded YouTube video -->
+        <iframe id="rickRollVideo" width="560" height="315" src="https://www.youtube.com/embed/yg0rRZjN0r0?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <script>
+        document.getElementById('cancelButton').onclick = function(event) {
+            event.preventDefault();
+            var rickRollVideo = document.getElementById('rickRollVideo');
+            rickRollVideo.style.display = 'block'; // Show the iframe to play the video
+            alert('Order has been canceled.');
+        };
+    </script>
+</body>
+</html>
